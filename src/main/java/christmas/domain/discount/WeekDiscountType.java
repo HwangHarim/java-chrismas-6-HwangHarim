@@ -13,7 +13,7 @@ public enum WeekDiscountType {
     private final int discount;
 
     WeekDiscountType(String type, FoodCategory foodCategory, int discount) {
-        this.type =type;
+        this.type = type;
         this.foodCategory = foodCategory;
         this.discount = discount;
     }

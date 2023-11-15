@@ -30,7 +30,6 @@ class OrderMenuTest {
         assertThatThrownBy(
             ()-> new OrderMenu(new OrderMenuRequest(init4)))
             .isInstanceOf(OrderMenuInputException.class);
-
     }
 
     @Test
@@ -65,9 +64,5 @@ class OrderMenuTest {
         assertThatThrownBy(
             ()-> new OrderMenu(new OrderMenuRequest(init)))
             .isInstanceOf(OrderMenuInputException.class);
-    }
-
-    @Test
-    void findByOrderCountMatcher() {
     }
 }

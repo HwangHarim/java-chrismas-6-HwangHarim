@@ -11,7 +11,8 @@ public class EventHandler {
 
     private final EventFactory event;
 
-    public EventHandler(ReservationDay reservationDay, TotalAmount totalAmount, OrderMenu orderMenu) {
+    public EventHandler(ReservationDay reservationDay, TotalAmount totalAmount,
+        OrderMenu orderMenu) {
         this.event = selectEvent(reservationDay, totalAmount, orderMenu);
     }
 
@@ -19,8 +20,8 @@ public class EventHandler {
         ReservationDay reservationDay,
         TotalAmount totalAmount,
         OrderMenu orderMenu
-    ){
-        if(isOverLimitTotalAmount(totalAmount) || isEventAllBeverage(orderMenu)){
+    ) {
+        if (isOverLimitTotalAmount(totalAmount) || isEventAllBeverage(orderMenu)) {
             return new EventFactory();
         }
         return new EventFactory(reservationDay, totalAmount, orderMenu);

@@ -33,13 +33,13 @@ public enum Menu {
         return name;
     }
 
-    public static Menu findByNameOfMatches(String name){
+    public static Menu findByNameOfMatches(String name) {
         return Arrays.stream(values())
             .filter(menu -> menu.getName().equals(name))
             .findFirst().get();
     }
 
-    public static List<Menu> findByCategoryOfMatches(FoodCategory foodCategory){
+    public static List<Menu> findByCategoryOfMatches(FoodCategory foodCategory) {
         return Arrays.stream(values())
             .filter(menu -> menu.getCategory().getCategory().equals(foodCategory.getCategory()))
             .collect(Collectors.toList());

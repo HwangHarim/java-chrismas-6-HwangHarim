@@ -18,7 +18,7 @@ public class EventFactory {
 
     private final GiftEvent giftEvent;
 
-    public EventFactory(){
+    public EventFactory() {
         this.christMasCountdownDiscount = new ChristMasCountdownDiscount();
         this.specialDiscount = SpecialDiscount.NOTTING;
         this.weekDiscountType = WeekDiscountType.NOTTING;

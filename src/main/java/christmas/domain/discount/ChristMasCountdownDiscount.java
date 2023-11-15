@@ -11,7 +11,7 @@ public class ChristMasCountdownDiscount {
     private int discount;
 
     public ChristMasCountdownDiscount() {
-       this.discount = 0;
+        this.discount = 0;
     }
 
     public ChristMasCountdownDiscount(ReservationDay reservationDay) {
@@ -19,8 +19,8 @@ public class ChristMasCountdownDiscount {
     }
 
     public void createChristMasCountdownDiscount(int reservationDay) {
-        if (START_DAY < reservationDay && reservationDay < END_DAY ) {
-            discount = DEFAULT_DISCOUNT +(DISCOUNT_UNIT * (reservationDay - 1));
+        if (START_DAY < reservationDay && reservationDay < END_DAY) {
+            discount = DEFAULT_DISCOUNT + (DISCOUNT_UNIT * (reservationDay - 1));
         }
     }
 

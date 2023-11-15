@@ -14,8 +14,9 @@ public class TotalDiscountAmount {
     private void calculateTotalDiscountAmount(EventFactory event, OrderMenu orderMenu) {
         totalDiscountAmount += event.getChristMasCountdownDiscount().getDiscount();
         totalDiscountAmount += event.getSpecialDiscount().getDiscount();
-        totalDiscountAmount += event.getWeekDiscountType().getDiscount() * orderMenu.findByOrderCountMatcher(
-            event.getWeekDiscountType().getFoodCategory());
+        totalDiscountAmount +=
+            event.getWeekDiscountType().getDiscount() * orderMenu.findByOrderCountMatcher(
+                event.getWeekDiscountType().getFoodCategory());
 
         if (event.getGiftEvent().isGift()) {
             totalDiscountAmount += event.getGiftEvent().getDiscount();

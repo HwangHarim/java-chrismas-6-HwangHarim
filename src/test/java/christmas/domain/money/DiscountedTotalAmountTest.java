@@ -23,6 +23,5 @@ class DiscountedTotalAmountTest {
 
         assertThat(new DiscountedTotalAmount(totalAmount, totalDiscountAmount, false)
             .getDiscountedTotalAmount()).isEqualTo(12000);
-
     }
 }

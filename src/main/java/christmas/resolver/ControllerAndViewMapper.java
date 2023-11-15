@@ -60,7 +60,7 @@ public class ControllerAndViewMapper {
         );
     }
 
-    public void runDisplayBadge(){
+    public void runDisplayBadge() {
         view.displayBadge(controller.getBadgeResult().getBadge());
     }
 }

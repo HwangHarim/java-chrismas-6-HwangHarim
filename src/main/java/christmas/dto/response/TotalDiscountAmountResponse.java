@@ -6,7 +6,7 @@ public class TotalDiscountAmountResponse {
     private final int totalDiscountAmount;
 
     public TotalDiscountAmountResponse(TotalDiscountAmount totalDiscountAmount) {
-      this.totalDiscountAmount = totalDiscountAmount.getTotalDiscountAmount();
+        this.totalDiscountAmount = totalDiscountAmount.getTotalDiscountAmount();
     }
 
     public int getTotalDiscountAmount() {

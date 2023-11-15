@@ -11,22 +11,23 @@ public class GiftEvent {
 
     public GiftEvent() {
     }
+
     public GiftEvent(TotalAmount totalAmount) {
         this.totalAmount = totalAmount.getTotalAmount();
     }
 
-    public boolean isGift(){
+    public boolean isGift() {
         return LIMIT_TOTAL_AMOUNT < totalAmount;
     }
 
-    public int getDiscount(){
+    public int getDiscount() {
         return Menu.CHAMPAGNE.getPrice();
     }
 
-    public String getEventResult(){
-       if(isGift()){
-           return Menu.CHAMPAGNE.getName() + COUNT_TEXT;
-       }
-       return Menu.NOTTING.getName();
+    public String getEventResult() {
+        if (isGift()) {
+            return Menu.CHAMPAGNE.getName() + COUNT_TEXT;
+        }
+        return Menu.NOTTING.getName();
     }
 }

@@ -78,7 +78,7 @@ public class OrderMenu {
     public int findByOrderCountMatcher(FoodCategory foodCategory) {
         var count = 0;
 
-        for (Menu menu: Menu.findByCategoryOfMatches(foodCategory)) {
+        for (Menu menu : Menu.findByCategoryOfMatches(foodCategory)) {
             count += orderMenuMap.get(menu);
         }
 

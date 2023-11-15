@@ -9,12 +9,12 @@ public class TotalAmount {
     private int totalAmount;
     private final Map<Menu, Integer> orderMenuMap;
 
-    public TotalAmount(OrderMenu orderMenu){
+    public TotalAmount(OrderMenu orderMenu) {
         this.orderMenuMap = orderMenu.getOrderMenuMap();
         calculateOrderTotal();
     }
 
-    public void calculateOrderTotal(){
+    public void calculateOrderTotal() {
         for (Map.Entry<Menu, Integer> order : orderMenuMap.entrySet()) {
             totalAmount += order.getKey().getPrice() * order.getValue();
         }

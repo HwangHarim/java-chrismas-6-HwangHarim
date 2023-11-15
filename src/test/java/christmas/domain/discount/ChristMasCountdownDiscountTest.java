@@ -29,8 +29,4 @@ class ChristMasCountdownDiscountTest {
 
         assertThat(0).isEqualTo(discount.getDiscount());
     }
-
-    @Test
-    void getDiscount() {
-    }
 }

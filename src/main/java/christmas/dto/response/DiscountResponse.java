@@ -4,14 +4,16 @@ import christmas.domain.discount.WeekDiscountType;
 import christmas.domain.event.EventFactory;
 
 public class DiscountResponse {
+
     private final int chrisMasCountDownDiscount;
     private final WeekDiscountType weekDiscountType;
     private final int weekDiscount;
     private final int specialDiscount;
     private final String giftDiscountResult;
     private final int giftDiscount;
-    public DiscountResponse(EventFactory eventResult, int weekDiscount){
-        this.chrisMasCountDownDiscount= eventResult.getChristMasCountdownDiscount().getDiscount();
+
+    public DiscountResponse(EventFactory eventResult, int weekDiscount) {
+        this.chrisMasCountDownDiscount = eventResult.getChristMasCountdownDiscount().getDiscount();
         this.weekDiscountType = eventResult.getWeekDiscountType();
         this.weekDiscount = weekDiscount;
         this.specialDiscount = eventResult.getSpecialDiscount().getDiscount();
@@ -39,7 +41,7 @@ public class DiscountResponse {
         return giftDiscountResult;
     }
 
-    public int getWeekDiscount(){
+    public int getWeekDiscount() {
         return weekDiscount;
     }
 }

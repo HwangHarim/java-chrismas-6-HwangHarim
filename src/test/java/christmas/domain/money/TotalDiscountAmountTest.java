@@ -24,5 +24,4 @@ class TotalDiscountAmountTest {
 
         assertThat(discountAmount.getTotalDiscountAmount()).isEqualTo(1600);
     }
-
 }
