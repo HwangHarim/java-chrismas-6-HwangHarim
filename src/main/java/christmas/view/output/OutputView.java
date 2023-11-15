@@ -2,7 +2,7 @@ package christmas.view.output;
 
 public class OutputView {
 
-    public void displayOutText(String orderResult) {
+    public void displayOutText() {
         System.out.println("12월 26일에 우테코 식당에서 받을 이벤트 혜택 미리 보기!");
         System.out.println();
     }

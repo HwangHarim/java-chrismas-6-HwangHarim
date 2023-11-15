@@ -20,6 +20,7 @@ public class RunApplication {
         checkReserveOrderMenu();
         Console.close();
 
+        result.viewText();
         result.runDisplayOrderMenu();
         result.runDisplayTotalAmount();
         result.runDisplayGiftEvent();

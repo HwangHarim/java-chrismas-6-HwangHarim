@@ -14,6 +14,10 @@ public class ControllerAndViewMapper {
         this.controller = christmasController;
     }
 
+    public void viewText(){
+        view.displayOutText();
+    }
+
     public void runDisplayOrderMenu() {
         view.displayOrderMenu(
             converter.orderMenuConvertToString(controller.getOrderMenuResult())
